@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<title>沙雕服 更新增量包下载</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/default.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+
+</head>
+
+<body>
+	<div id="app">
+		<div class="container">
+			<div class="main">
+				<ul class="cbp_tmtimeline">
+					<li>
+						<time class="cbp_tmtime" datetime=""><span>指南</span> <span>如何手动更新客户端</span></time>
+						<div class="cbp_tmicon"></div>
+						<div class="cbp_tmlabel">
+								<h2>1.下载增量包 </h2>
+								<h2>2.将增量包移至游戏启动器同级目录下 </h2>
+								<h2>3.启动增量包 </h2>	
+								<h2 style="color: red;">必须由低至高逐次升级，不可跨版本更新</h2>
+						</div>
+					</li>
+					<li v-for="i in mc">
+						<time class="cbp_tmtime" datetime=""><span>版本</span> <span>{{i}}</span></time>
+						<div class="cbp_tmicon"></div>
+						<div class="cbp_tmlabel">
+							<a :href="'http://mcfile.lafish.fun/'+i+'.exe'">
+								<h2>点我下载 {{i}} 增量包</h2>
+							</a>
+							<img style="width: 100%;height: auto;" :src="'http://mcfile.lafish.fun/img/'+i+'.jpg'" alt="">
+						</div>
+					</li>
+
+			</div>
+			</ul>
+		</div>
+	</div>
+
+	<script>
+		new Vue({
+			el: '#app',
+			data: {
+				mc: [2.4,2.3, 2.2, 2.1]
+			}
+		})
+	</script>
+</body>
+
+</html>
