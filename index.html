@@ -9,7 +9,6 @@
 	<link rel="stylesheet" type="text/css" href="css/component.css" />
 	<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
 	<script src="js/modernizr.custom.js"></script>
-
 </head>
 
 <body>
@@ -21,10 +20,12 @@
 						<time class="cbp_tmtime" datetime=""><span>指南</span> <span>如何手动更新客户端</span></time>
 						<div class="cbp_tmicon"></div>
 						<div class="cbp_tmlabel">
-								<h2>1.下载增量包 </h2>
-								<h2>2.将增量包移至游戏启动器同级目录下 </h2>
-								<h2>3.启动增量包 </h2>	
-								<h2 style="color: red;">必须由低至高逐次升级，不可跨版本更新</h2>
+								<p>1.下载增量包 </p>
+								<p>2.将增量包移至游戏启动器同级目录下 </p>
+							<img style="width: 100%;height: auto;" src="/img/gif.gif" alt="">
+
+								<p>3.启动增量包 </p>	
+								<strong style="color: red;">必须由低至高逐次升级，不可跨版本更新</strong>
 						</div>
 					</li>
 					<li v-for="i in mc">
@@ -37,7 +38,7 @@
 							<a :href="'http://mcfile.lafish.fun/'+i+'.exe'">
 								<h2>点我下载 {{i}} 增量包 (备用线路)</h2>
 							</a>
-							<img style="width: 100%;height: auto;" :src="'http://mcfile.lafish.fun/img/'+i+'.jpg'" alt="">
+							<img style="width: 100%;height: auto;" :src="'/img/'+i+'.jpg'" alt="">
 						</div>
 					</li>
 
