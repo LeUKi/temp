@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/default.css" />
 	<link rel="stylesheet" type="text/css" href="css/component.css" />
-	<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+	<script src="https://s0.pstatp.com/cdn/expire-1-M/vue/2.0.0/vue.min.js" type="application/javascript"></script>
 	<script src="js/modernizr.custom.js"></script>
 </head>
 
@@ -20,12 +20,12 @@
 						<time class="cbp_tmtime" datetime=""><span>指南</span> <span>如何手动更新客户端</span></time>
 						<div class="cbp_tmicon"></div>
 						<div class="cbp_tmlabel">
-								<p>1.下载增量包 </p>
-								<p>2.将增量包移至游戏启动器同级目录下 </p>
+							<p>1.下载增量包 </p>
+							<p>2.将增量包移至游戏启动器同级目录下 </p>
 							<img style="width: 100%;height: auto;" src="/img/gif.gif" alt="">
 
-								<p>3.启动增量包 </p>	
-								<strong style="color: red;">必须由低至高逐次升级，不可跨版本更新</strong>
+							<p>3.启动增量包 </p>
+							<strong style="color: red;">必须由低至高逐次升级，不可跨版本更新</strong>
 						</div>
 					</li>
 					<li v-for="i in mc">
@@ -51,7 +51,7 @@
 		new Vue({
 			el: '#app',
 			data: {
-				mc: [3.2,3.1,"3.0",2.4,2.3, 2.2, 2.1]
+				mc: [3.2, 3.1, "3.0", 2.4, 2.3, 2.2, 2.1]
 			}
 		})
 	</script>
